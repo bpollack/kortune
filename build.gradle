@@ -1,4 +1,7 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.bitquabit.kortune.Kortune'
 
 repositories {
     jcenter()
@@ -6,4 +9,3 @@ repositories {
 
 dependencies {
 }
-
