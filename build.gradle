@@ -7,7 +7,7 @@ plugins {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 mainClassName = 'com.bitquabit.kortune.Kortune'
