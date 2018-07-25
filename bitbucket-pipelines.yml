@@ -4,5 +4,7 @@ pipelines:
   default:
     - step:
         name: build jars
+        caches:
+          - gradle
         script:
           - ./gradlew build
