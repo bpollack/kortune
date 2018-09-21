@@ -8,8 +8,11 @@ object Kortune {
     private fun loadFortunes(resourceName: String): List<String> {
         val fortunes = mutableListOf<String>()
 
-        val reader = BufferedReader(InputStreamReader(
-                Kortune::class.java.getResourceAsStream(resourceName)))
+        val reader = BufferedReader(
+            InputStreamReader(
+                Kortune::class.java.getResourceAsStream(resourceName)
+            )
+        )
         val sb = StringBuilder()
         reader.forEachLine { line ->
             if (line == "%") {
