@@ -37,7 +37,7 @@ object Kortune {
     }
 
     @JvmStatic
-    fun main(args: Array<String>) {
+    fun main() {
         val fortunes = loadFortunes("/offensive.fortunes", "/freebsd.fortunes")
         val random = Random()
         println(fortunes[random.nextInt(fortunes.size)])
